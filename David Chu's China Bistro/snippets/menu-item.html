@@ -1,0 +1,30 @@
+
+<!-- ========= Trecho com os itens do menu ======== -->
+
+<!--Incluindo a foto de cada prato-->
+<div class="menu-item-tile col-md-6">
+
+  <div class="row"> <!-- Elementos divididos em colunas-->
+
+    <div class="col-sm-5">
+
+      <div class="menu-item-photo">
+        <!-- Adiciona o código do prato-->
+        <div>{{short_name}}</div> 
+        <!-- Procura a imagem com base no código do prato correspondente-->
+        <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg" alt="Item">
+      </div>
+
+      <!--Exibirá os difrentes preços para diferentes porções de pratos-->
+      <div class="menu-item-price">{{price_small}}<span> {{small_portion_name}}</span> {{price_large}} <span>{{large_portion_name}}</span></div>
+
+    </div>
+
+    <!--Descrição e nome do prato-->
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title">{{name}}</h3>
+      <p class="menu-item-details">{{description}}</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>

@@ -1,0 +1,13 @@
+
+<!-- ========== Trecho do menu de categorias com inserção de fotos e o nome de cada prato ============= -->
+
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('{{short_name}}');"> 
+    <div class="category-tile">
+      
+      <!--Adiciona a foto de cada item junto com seu nome com base no short_name-->
+      <img width="200" height="200" src="images/menu/{{short_name}}/{{short_name}}.jpg" alt="{{name}}">
+      <span>{{name}}</span>
+    </div>
+  </a>
+</div>
